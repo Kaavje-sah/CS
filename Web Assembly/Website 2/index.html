@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Session</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        ol {
+            list-style-type: decimal;
+            padding-left: 40px;
+        }
+
+        ul > ol {
+            list-style-type: decimal;
+        }
+
+        ol > ol {
+            list-style-type: lower-roman;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="4">A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td colspan="2">D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+        </tr>
+    </table>
+    <h2>List</h2>
+    <ul>
+        <li>ABC</li>
+        <ol>
+            <li>BCD</li>
+            <li>DEF</li>
+        </ol>
+        <li>GHI</li>
+        <ol start="3" style="list-style-type: lower-roman;">
+            <li>JKL</li>
+            <li>MNO</li>
+        </ol>
+    </ul>
+</body>
+</html>
